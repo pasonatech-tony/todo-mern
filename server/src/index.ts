@@ -10,7 +10,7 @@ import { updateTodoController } from "./controllers/updateTodoController";
 require("dotenv").config();
 
 const app = express();
-const port = 3100;
+const port = process.env.PORT || 3100;
 
 app.use(express.json());
 app.use(
