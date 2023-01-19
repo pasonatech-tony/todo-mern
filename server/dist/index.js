@@ -48,7 +48,7 @@ var deleteTodoController_1 = require("./controllers/deleteTodoController");
 var updateTodoController_1 = require("./controllers/updateTodoController");
 require("dotenv").config();
 var app = express();
-var port = 3100;
+var port = process.env.PORT || 3100;
 app.use(express.json());
 app.use((0, cors_1["default"])({
     origin: "*"
