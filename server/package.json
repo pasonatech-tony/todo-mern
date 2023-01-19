@@ -1,5 +1,7 @@
 {
   "scripts": {
+    "build": "npx tsc",
+    "start": "node src/index.ts",
     "dev": "nodemon --watch \"src/**\" --ext \"ts,json\"  --exec \"ts-node src/index.ts\""
   },
   "dependencies": {
@@ -12,5 +14,8 @@
     "mongoose": "^6.8.4",
     "nodemon": "^2.0.20",
     "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
   }
 }
