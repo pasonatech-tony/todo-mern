@@ -25,12 +25,13 @@ export const useTodo = () => {
     todoData.updateTodoData(id, newTodoItem).then((updatedTodo) => {
       //if success, update todolist; update the matching id with updatedTodo returned from the server
       const newTodoList = todoList.map((item) =>
-        item._id !== updatedTodo.id ? item : updatedTodo,
+        item._id !== updatedTodo._id ? item : updatedTodo,
       );
 
       //set the new todo list
       setTodoList(newTodoList);
     });
+
   };
 
   //add 1 todo item to todolist

@@ -12,7 +12,7 @@ export const TodoItem = ({
 }) => {
   // onClickイベントが発生したら、useTodoフックを呼び出す
   // Call the useTodo hook when the onClick event fires
-  const handletoggleTodoListItemStatus = () =>
+  const handleToggleTodoListItemStatus = () =>
     toggleTodoListItemStatus(todo._id, todo.done);
   const handleDeleteTodoListItem = () => deleteTodoListItem(todo._id);
 
@@ -23,7 +23,7 @@ export const TodoItem = ({
       </div>
       <div className="">
         <button
-          onClick={handletoggleTodoListItemStatus}
+          onClick={handleToggleTodoListItemStatus}
           className="rounded border border-pink-500 bg-transparent py-2 px-4 font-semibold hover:border-transparent hover:bg-pink-500 hover:text-white"
         >
           {todo.done ? 'To incomplete list' : 'To complete list'}
