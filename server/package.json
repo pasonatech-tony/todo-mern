@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "npm install --production=false && tsc",
+    "build": "yarn --production=false && tsc",
     "start": "node dist/index.js",
     "dev": "nodemon --watch \"src/**\" --ext \"ts,json\"  --exec \"ts-node src/index.ts\""
   },
